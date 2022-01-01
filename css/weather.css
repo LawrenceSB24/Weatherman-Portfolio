@@ -1,0 +1,258 @@
+/*UPDATE (12/27): 
+This is CSS style file that will be applied to the portfolio. This is......very basic and also brute forced for the time being but it will be modified as more progress is made. */
+
+/*No updates 12/28-29 due to familiy emergencies.*/
+
+/*UPDATE (12/30): 
+The CSS file has been updated and cleaned for proper UI. All that needs to be fixed is deployment for applications(?), orientation fixing, and addition to About Me information.*/
+
+/*UPDATE (12/31): 
+Ok, so the final elements have been incorporated. Everything appears similar to the demo site. Only a few key differences remain for editing: 
+1. Alignment still is misshapened
+2. Currently, I have not deployed any applications before (unless the fanpage and the About me websites from the prework count).
+
+Criteria that is currently checked off: 
+a. GIVEN I need to sample a potential employee's previous work
+b. WHEN I load their portfolio
+c. THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+d. WHEN I click one of the links in the navigation
+e. THEN the UI scrolls to the corresponding section
+f. WHEN I am presented with the developer's first application
+g. THEN that application's image should be larger in size than the others
+
+
+Criteria still needed for completion: 
+a. WHEN I resize the page or view the site on various screens and devices
+b. THEN I am presented with a responsive layout that adapts to my viewport
+
+Criteria possibly unknown if can be completed: 
+a. WHEN I click on the images of the applications
+b. THEN I am taken to that deployed application*/
+
+/*Variables for colors, specific paddings, font colors and size, and borders.*/
+:root {
+    --dark: rgb(65, 65, 65);
+    --border: 10px solid var(--box);
+    --box-radius: 20px;
+    --navLink: rgb(7, 255, 172);
+    --box: rgb(5, 194, 184);
+    --font: serif;
+    --header-padding: 20px 20px 20px 60px;
+    --body-color: navy;
+    --head: 40px;
+    --underline: underline;
+    --thickness: 5px;
+    --size: 20px;
+}
+
+/*Universal selector that specifies over-arching style of the website*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Body style section. Just the background color for the site*/
+body {
+    background-color: rgb(231, 225, 231);
+}
+
+/*Header styling section beginning.*/
+
+/*To start off, we have the style and formatting for the section itself.*/
+header {
+    padding: 1%;
+    background-color: var(--dark);
+    color: var(--box);
+    font-family: var(--font);
+}
+
+footer {
+    padding: 1%;
+    background-color: var(--dark);
+    color: var(--box);
+    font-family: var(--font);
+    font-size: 30px;
+}
+
+footer p {
+    margin-left: 50px;
+    color: var(--text);
+    text-decoration: var(--underline);
+    text-decoration-thickness: var(--thickness);
+}
+
+/*This section focuses on the h1 element in the header*/
+header h1 {
+    display: inline-flex;
+    padding: var(--header-padding);
+    font-size: 50px;
+    border: var(--border);
+    background-color: var(--box);
+    color: var(--dark);
+    border-radius: var(--box-radius);
+}
+
+/*This section focuses on the anchor tags within the html. For consolidation, all anchor formatting and styling is focused within this section.*/
+a {
+    margin-left: 50px;
+    color: var(--text);
+    text-decoration: var(--underline);
+    text-decoration-thickness: var(--thickness);
+}
+
+/*This section focuses on the style and format for the navigation bar in the header*/
+header nav {
+    margin-right: 20px;
+    padding-top: 15px;
+    float: right;
+    color: var(--navLink);
+    font-size: 30px;
+    font-family: var(--font);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+/*End of navigation style section*/
+/*End of header style section*/
+
+/*Main content style section beginning*/
+
+/*The start of this section only contains the color and size for the website's font*/
+main {
+    color: var(--body-color);
+    font-size: var(--size);
+}
+
+/**/
+.clouds {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    max-width: 300%;
+    background-image: url("https://i.gifer.com/7zlA.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.clouds h2 {
+    padding: var(--header-padding);
+    margin-left: 85%;
+    margin-top: 20%;
+    position: relative;
+    border: 10px solid azure;
+    font-size: 20px;
+    border-radius: var(--box-radius);
+    color: var(--dark);
+    background-color: azure;
+    z-index: 1;
+}
+/**/
+
+/*This section focuses on the style and format for the titles.*/
+.titles {
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px;
+}
+
+/*Styling and format for all h2 tags*/
+h2 {
+    margin-bottom: 5px;
+    margin-left: 5%;
+    font-size: 50px;
+    
+}
+/*Style for the hr tag between the titles and the content*/
+hr {
+    margin-left: 5%;
+    border-left: 5px solid var(--body-color);
+}
+/*Focuses on the style for the About me content */
+.titles .bio {
+    display: inline-flex;
+    margin-left: 50px;
+    font-size: var(--size);
+}
+
+
+/*Styling and format for the content in the Work section*/
+.Content {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 200px;
+    font-size: var(--size);
+    border-radius: 0px 12px 0px 0px;
+    border: var(--border);
+    background-color: var(--box);
+    opacity: 1.0;
+}
+
+
+/*background image format for the first application section*/
+.Main-app {
+    background-image: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F34%2F2020%2F12%2F18%2Fsnow-storm-blizzard-getty-1220-2000.jpg");
+    height: 700px;
+    width: 1450px;
+}
+
+/*Style and formating for the figure elements*/
+figure {
+    height: 300px;
+    width: 700px;
+    border: var(--border);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 50px;
+    opacity: 0.5;
+}
+
+/*This allows for a highlight effect when user hovers over different application windows */
+figure:hover {
+    opacity: 1.0;
+    transition: 0.5s ease-in;
+}
+
+/*This section focuses on orientation of application windows*/
+.column {
+    float: left;
+    width: 50%;
+    margin: auto;
+}
+
+.row:after {
+    clear: both;
+    display: table;
+}
+
+/*Images for the second - fifth application windows*/
+.Second-app {
+    background-image: url("https://i.pinimg.com/originals/8d/f7/70/8df770e83f7b87fc0bfe7f6a17764f99.gif");
+    background-size: cover;
+    
+}
+
+.Third-app {
+    background-image: url("http://grist.org/wp-content/uploads/2013/06/supercell_16803.gif");
+    background-size: cover;
+}
+
+.Fourth-app {
+    background-image: url("https://c.tenor.com/ycou7TLAc4YAAAAC/dust-storm.gif");
+    background-size: cover;
+}
+
+.Last-app {
+    background-image: url("https://media3.giphy.com/media/MXvDhlmD0eB5qNvvjZ/giphy.gif");
+    background-size: cover;
+}
