@@ -78,7 +78,7 @@ footer {
 footer p {
     margin-left: 50px;
     color: var(--text);
-    text-decoration: var(--underline);
+    text-decoration: none;
     text-decoration-thickness: var(--thickness);
 }
 
@@ -97,7 +97,7 @@ header h1 {
 a {
     margin-left: 50px;
     color: var(--text);
-    text-decoration: var(--underline);
+    text-decoration: none;
     text-decoration-thickness: var(--thickness);
 }
 
@@ -266,6 +266,8 @@ figure:hover {
         font-size: 20px;
     }
 
+  
+
     header h1 {
         font-size: 30px;
     }
@@ -318,6 +320,8 @@ figure:hover {
     header h1 {
         font-size: 20px;
     }
+
+
 
     .clouds h2 {
         margin-top: 5%;
