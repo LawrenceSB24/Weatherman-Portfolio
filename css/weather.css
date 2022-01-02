@@ -36,7 +36,7 @@ b. THEN I am taken to that deployed application*/
     --box-radius: 20px;
     --navLink: rgb(7, 255, 172);
     --box: rgb(5, 194, 184);
-    --font: serif;
+    --font: Arial;
     --header-padding: 20px 20px 20px 60px;
     --body-color: navy;
     --head: 40px;
@@ -50,6 +50,7 @@ b. THEN I am taken to that deployed application*/
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: var(--font);
 }
 
 /*Body style section. Just the background color for the site*/
@@ -64,14 +65,13 @@ header {
     padding: 1%;
     background-color: var(--dark);
     color: var(--box);
-    font-family: var(--font);
 }
 
 footer {
     padding: 1%;
+    width: 100%;
     background-color: var(--dark);
     color: var(--box);
-    font-family: var(--font);
     font-size: 30px;
 }
 
@@ -108,7 +108,6 @@ header nav {
     float: right;
     color: var(--navLink);
     font-size: 30px;
-    font-family: var(--font);
 }
 
 header nav ul {
@@ -255,4 +254,101 @@ figure:hover {
 .Last-app {
     background-image: url("https://media3.giphy.com/media/MXvDhlmD0eB5qNvvjZ/giphy.gif");
     background-size: cover;
+}
+
+@media screen and (max-width: 1080px) {
+    *,
+    .Intro,
+    .Projects,
+    footer p,
+    h2 {
+        padding: auto;
+        font-size: 20px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .clouds h2 {
+        margin-top: 10%;
+        margin-left: 42.5%;
+        font-size: 15px;
+    }
+
+    .titles .bio {
+        font-size: 15px;
+    }
+
+    .Content,
+    p {
+        font-size: 13px;
+    }
+
+    .Content {
+        width: 150px;
+    }
+
+    .Main-app {
+       height: 350px;
+       width: 725px;
+    }
+
+    figure {
+        height: 150px;
+        width: 350px;
+    }
+    
+    .titles {
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    *,
+    .Intro,
+    .Projects,
+    footer p,
+    h2 {
+        padding: auto;
+        font-size: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .clouds h2 {
+        margin-top: 5%;
+        margin-left: 42.5%;
+        font-size: 10px;
+    }
+
+    .titles .bio {
+        font-size: 10px;
+    }
+
+    .Content {
+        width: 100px;
+    }
+
+    .Content,
+    p {
+        font-size: 10px;
+    }
+
+    .Main-app {
+       height: 175px;
+       width: 363px;
+    }
+
+    figure {
+        height: 75px;
+        width: 175px;
+    }
+    
+    .titles {
+        margin-left: 10px;
+    }
 }
