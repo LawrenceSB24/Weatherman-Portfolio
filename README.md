@@ -37,7 +37,7 @@ If you do not have any applications delpoyed yet, then you can suppliment this b
 ## Description of Code
 
 So for this portfolio, we have three pieces:
-> 1. forecaster.html [forecaster.html] (This is our sematic html file with the backbone information for our portfolio)
+> 1. index.html [index.html] (This is our sematic html file with the backbone information for our portfolio)
 
 > 2. reset.css [reset.css] (This is the css file that allows the developer to reset the styling of our HTML file(s) to a consistent baseline. This lets us design our html file from scrtach)
 
