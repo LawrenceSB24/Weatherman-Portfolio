@@ -376,6 +376,7 @@ different screen resolutions*/
         margin-left: 70%;
         border-left: 30px;
     }
+
     nav {
     font-size: 15px;
     }
@@ -435,6 +436,7 @@ different screen resolutions*/
         margin-top: 40%;
         margin-left: 55%;
     }
+
     nav {
     font-size: 10px;
     }
@@ -488,6 +490,7 @@ as basis templates included iphone, galaxy s5, and Moto)*/
     header {
         width: 200%;
     }
+
     header h1 {
         padding: 1%;
         font-size: 10px;
@@ -505,6 +508,7 @@ as basis templates included iphone, galaxy s5, and Moto)*/
         padding: 2%;
         margin-left: 55%;
     }
+    
     nav {
         margin-right: 0;
         font-size: 15px;
