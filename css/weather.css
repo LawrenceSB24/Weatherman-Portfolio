@@ -62,12 +62,14 @@ body {
 
 /*To start off, we have the style and formatting for the section itself.*/
 header {
+    position: relative;
     padding: 1%;
     background-color: var(--dark);
     color: var(--box);
 }
 
 footer {
+    position: relative;
     padding: 1%;
     width: 100%;
     background-color: var(--dark);
@@ -128,7 +130,7 @@ main {
     font-size: var(--size);
 }
 
-/**/
+/*Mid-section background style and formating section*/
 .clouds {
     display: flex;
     justify-content: space-between;
@@ -150,9 +152,8 @@ main {
     border-radius: var(--box-radius);
     color: var(--dark);
     background-color: azure;
-    z-index: 1;
 }
-/**/
+/*End of Mid-background styling section*/
 
 /*This section focuses on the style and format for the titles.*/
 .titles {
@@ -256,103 +257,121 @@ figure:hover {
     background-size: cover;
 }
 
+/*Screen display for desktops of 1080px*/
 @media screen and (max-width: 1080px) {
-    *,
-    .Intro,
-    .Projects,
-    footer p,
-    h2 {
-        padding: auto;
-        font-size: 20px;
+
+    header {
+        width: 100%;
+        position: relative;
+        float: right;
     }
 
-  
+    header nav {
+        font-size: 20px;
+    }
 
     header h1 {
         font-size: 30px;
     }
 
+    .clouds {
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
     .clouds h2 {
-        margin-top: 10%;
-        margin-left: 42.5%;
-        font-size: 15px;
+        background-color: navy;
+        color: oldlace;
+    }
+
+    h2 {
+        font-size: 30px;
     }
 
     .titles .bio {
-        font-size: 15px;
-    }
-
-    .Content,
-    p {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .Content {
-        width: 150px;
+        width: 50%;
+        font-size: 15px;
     }
 
     .Main-app {
-       height: 350px;
-       width: 725px;
+        height: calc(700px/2);
+        width: calc(1450px/2);
     }
 
     figure {
-        height: 150px;
-        width: 350px;
+        height: calc(300px/2);
+        width: calc(700px/2);
+    }
+
+    footer,
+    footer p {
+        font-size: 20px;
     }
     
-    .titles {
-        margin-left: 10px;
-    }
 }
+    
 
+/*Screen display for 760px displays*/
+@media screen and (max-width: 760px) {
+    header {
+        width: 100%;
+        position: relative;
+        float: right;
+    }
 
-@media screen and (max-width: 640px) {
-    *,
-    .Intro,
-    .Projects,
-    footer p,
-    h2 {
-        padding: auto;
-        font-size: 10px;
+    header nav {
+        font-size: 15px;
     }
 
     header h1 {
         font-size: 20px;
     }
 
-
+    .clouds {
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
 
     .clouds h2 {
-        margin-top: 5%;
-        margin-left: 42.5%;
-        font-size: 10px;
+        background-color: maroon;
+        color: oldlace;
+    }
+
+    h2 {
+        font-size: 20px;
     }
 
     .titles .bio {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .Content {
-        width: 100px;
-    }
-
-    .Content,
-    p {
-        font-size: 8px;
+        width: 40%;
+        font-size: 7px;
     }
 
     .Main-app {
-       height: 175px;
-       width: 363px;
+        height: calc(700px/3);
+        width: calc(1450px/3);
     }
 
     figure {
-        height: 75px;
-        width: 175px;
+        height: calc(300px/3);
+        width: calc(700px/3);
     }
-    
-    .titles {
-        margin-left: 10px;
+
+    footer,
+    footer p {
+        font-size: 15px;
     }
 }
