@@ -285,6 +285,7 @@ figure:hover {
     .clouds h2 {
         background-color: navy;
         color: oldlace;
+        font-size: 30px;
     }
 
     h2 {
@@ -345,6 +346,7 @@ figure:hover {
     .clouds h2 {
         background-color: maroon;
         color: oldlace;
+        font-size: 20px;
     }
 
     h2 {
