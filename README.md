@@ -41,4 +41,16 @@ So for this portfolio, we have three pieces:
 
 > 2. reset.css [reset.css] (This is the css file that allows the developer to reset the styling of our HTML file(s) to a consistent baseline. This lets us design our html file from scrtach)
 
-> 3. weather.css [weather.css] (This is the css file that contains all of the styling and formating for our HTML file)
+> 3. weather.css [weather.css] (This is the css file that contains all of the styling and formating for our HTML file. The file contains the style/format for the site and the parameters for the site to have responsive layouts for different mobile devices.)
+
+### portfolio contents
+
+There are three sections on the portfolio:
+
+>1. About Me
+>2. Work
+>3. Contact Me
+
+Each section is accesible when the user clicks on the links located in the navigation bar. For the time being, there are placeholder images in the work section, though once deployed applications can be applicable for display, then the user can click on the applications windows to view the application sites.
+
+#### NOTE: So for the images I used gifs of different severe weather phenomenon.
